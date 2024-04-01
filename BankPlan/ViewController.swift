@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
 
         NSLog("");
-        NSLog(""); NSLog("");
+        NSLog(""); NSLog(""); NSLog("");
     super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
