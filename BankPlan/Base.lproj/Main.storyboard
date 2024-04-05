@@ -9,30 +9,88 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--RegisterVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RegisterVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahg-hh-27a">
+                                <rect key="frame" x="0.0" y="47" width="375" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUc-A1-Bpo">
+                                        <rect key="frame" x="16" y="15" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Dismiss"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="w3g-nY-Ax5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-ta-yEa">
+                                <rect key="frame" x="16" y="121" width="343" height="535"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="개인정보 약관 동의가 필요해요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKF-2L-uHH">
+                                        <rect key="frame" x="8" y="0.0" width="327" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPb-Hz-hdA">
+                                        <rect key="frame" x="0.0" y="80" width="343" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Euy-2T-i4t">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bin-Jj-oMf">
+                                                <rect key="frame" x="0.0" y="64" width="343" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chE-J9-WDt">
+                                                <rect key="frame" x="0.0" y="116" width="343" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ahg-hh-27a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="47" id="JU9-CQ-EKR"/>
+                            <constraint firstItem="ahg-hh-27a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ol4-11-OFP"/>
+                            <constraint firstItem="ahg-hh-27a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QvF-gO-iFX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-866" y="-214"/>
+            <point key="canvasLocation" x="582" y="37"/>
         </scene>
-        <!--View Controller-->
+        <!--Main LoginVC-->
         <scene sceneID="1lD-m9-pEQ">
             <objects>
-                <viewController id="aLf-Vt-Lzi" sceneMemberID="viewController">
+                <viewController id="aLf-Vt-Lzi" customClass="MainLoginVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cE4-do-MOd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f06-qE-JZK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginFrame" translatesAutoresizingMaskIntoConstraints="NO" id="f06-qE-JZK">
                                 <rect key="frame" x="0.0" y="67" width="375" height="403"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="403" id="RK1-JO-W0N"/>
@@ -41,41 +99,71 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orN-tF-jdH">
                                 <rect key="frame" x="0.0" y="490" width="375" height="288"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLW-Vl-Ejo" userLabel="KakaoLoginBtn">
-                                        <rect key="frame" x="40" y="19" width="295" height="52"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLW-Vl-Ejo" userLabel="KakaoLoginBtn">
+                                        <rect key="frame" x="40" y="12" width="295" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="crK-ga-ZjC"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="16" image="KakaoLogin"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxd-hw-hkb" userLabel="AppleLoginBtn">
-                                        <rect key="frame" x="40" y="79" width="295" height="52"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxd-hw-hkb" userLabel="AppleLoginBtn">
+                                        <rect key="frame" x="40" y="80" width="295" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="1JV-ya-Cy3"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="16" image="AppleLogin"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="AppleLoginBtnTouchDown:" destination="aLf-Vt-Lzi" eventType="touchDown" id="WtU-yj-FGf"/>
+                                        </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DividerLogin" translatesAutoresizingMaskIntoConstraints="NO" id="unE-hY-ENv">
-                                        <rect key="frame" x="85" y="139" width="204" height="16"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DividerLogin" translatesAutoresizingMaskIntoConstraints="NO" id="unE-hY-ENv">
+                                        <rect key="frame" x="85" y="144" width="204" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="UTx-KY-Rnf"/>
+                                        </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usm-EP-xmw">
-                                        <rect key="frame" x="189" y="170" width="73" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="GoogleLogin"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep8-j0-I0o">
-                                        <rect key="frame" x="108" y="170" width="73" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep8-j0-I0o">
+                                        <rect key="frame" x="108" y="168" width="73" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="96o-WT-Mne"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="FaceBookLogin"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usm-EP-xmw">
+                                        <rect key="frame" x="189" y="168" width="73" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="lKL-Jn-0eK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="GoogleLogin"/>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="mLW-Vl-Ejo" firstAttribute="top" secondItem="orN-tF-jdH" secondAttribute="top" constant="12" id="2Nx-rg-RmS"/>
+                                    <constraint firstItem="mLW-Vl-Ejo" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="40" id="39z-W9-TRy"/>
+                                    <constraint firstItem="Ep8-j0-I0o" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="108" id="EvD-Vu-cPc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ep8-j0-I0o" secondAttribute="bottom" constant="58" id="FqZ-48-rpS"/>
+                                    <constraint firstItem="unE-hY-ENv" firstAttribute="top" secondItem="fxd-hw-hkb" secondAttribute="bottom" constant="12" id="LXg-n4-2sh"/>
+                                    <constraint firstItem="usm-EP-xmw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ep8-j0-I0o" secondAttribute="trailing" constant="8" symbolic="YES" id="OR4-4j-VP1"/>
+                                    <constraint firstItem="unE-hY-ENv" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="85" id="Obd-Es-PCo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="288" id="WCj-w8-wRO"/>
+                                    <constraint firstItem="fxd-hw-hkb" firstAttribute="top" secondItem="mLW-Vl-Ejo" secondAttribute="bottom" constant="16" id="Zs4-T0-7Qv"/>
+                                    <constraint firstAttribute="trailing" secondItem="fxd-hw-hkb" secondAttribute="trailing" constant="40" id="Zvt-fA-BqO"/>
+                                    <constraint firstItem="usm-EP-xmw" firstAttribute="top" secondItem="unE-hY-ENv" secondAttribute="bottom" constant="8" id="gyD-Ge-hOR"/>
+                                    <constraint firstItem="Ep8-j0-I0o" firstAttribute="top" secondItem="unE-hY-ENv" secondAttribute="bottom" constant="8" id="if6-yH-RB8"/>
                                     <constraint firstAttribute="height" constant="288" id="jHD-fg-V9K"/>
+                                    <constraint firstAttribute="trailing" secondItem="mLW-Vl-Ejo" secondAttribute="trailing" constant="40" id="meI-bd-euj"/>
+                                    <constraint firstItem="fxd-hw-hkb" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="40" id="nKv-yJ-nOq"/>
+                                    <constraint firstAttribute="trailing" secondItem="usm-EP-xmw" secondAttribute="trailing" constant="113" id="sed-8e-usq"/>
+                                    <constraint firstAttribute="bottom" secondItem="usm-EP-xmw" secondAttribute="bottom" constant="58" id="taW-Bo-38u"/>
+                                    <constraint firstAttribute="trailing" secondItem="unE-hY-ENv" secondAttribute="trailing" constant="86" id="urY-8I-uA7"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -84,22 +172,31 @@
                         <constraints>
                             <constraint firstItem="f06-qE-JZK" firstAttribute="leading" secondItem="r7U-ew-oaG" secondAttribute="leading" id="08s-Mb-mVI"/>
                             <constraint firstItem="orN-tF-jdH" firstAttribute="leading" secondItem="r7U-ew-oaG" secondAttribute="leading" id="DMq-Sh-XcO"/>
+                            <constraint firstItem="orN-tF-jdH" firstAttribute="bottom" secondItem="r7U-ew-oaG" secondAttribute="bottom" id="Efw-x3-CBI"/>
+                            <constraint firstItem="orN-tF-jdH" firstAttribute="bottom" secondItem="r7U-ew-oaG" secondAttribute="bottom" id="Eze-Uv-pxa"/>
                             <constraint firstItem="f06-qE-JZK" firstAttribute="top" secondItem="r7U-ew-oaG" secondAttribute="top" constant="17" id="VYI-61-4II"/>
                             <constraint firstItem="orN-tF-jdH" firstAttribute="trailing" secondItem="r7U-ew-oaG" secondAttribute="trailing" id="Y4a-5t-ndB"/>
+                            <constraint firstItem="orN-tF-jdH" firstAttribute="bottom" secondItem="r7U-ew-oaG" secondAttribute="bottom" id="i32-eh-NaX"/>
                             <constraint firstItem="orN-tF-jdH" firstAttribute="top" secondItem="f06-qE-JZK" secondAttribute="bottom" constant="20" id="nEs-ae-EcL"/>
                             <constraint firstItem="f06-qE-JZK" firstAttribute="trailing" secondItem="r7U-ew-oaG" secondAttribute="trailing" id="yMO-NC-i0C"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AppleLoginBtn" destination="fxd-hw-hkb" id="qGh-p0-WIN"/>
+                        <outlet property="FacebookLoginBtn" destination="Ep8-j0-I0o" id="wwN-IF-ozZ"/>
+                        <outlet property="GoogleLoginBtn" destination="usm-EP-xmw" id="OYK-fF-gS4"/>
+                        <outlet property="KakaoLoginBtn" destination="mLW-Vl-Ejo" id="6x9-bd-U2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qty-cS-cae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="21.428571428571431"/>
+            <point key="canvasLocation" x="-156" y="29"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="hkN-Se-qqS">
             <objects>
                 <viewController id="ehy-Av-NEc" customClass="LoginVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Uft-z6-dyf">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="registerController" id="Uft-z6-dyf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -157,20 +254,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wui-fj-YG1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878.62595419847321" y="2.8169014084507045"/>
+            <point key="canvasLocation" x="679" y="-681"/>
         </scene>
     </scenes>
     <resources>
         <image name="AppleLogin" width="295" height="52"/>
+        <image name="Dismiss" width="24" height="24"/>
         <image name="DividerLogin" width="204.33332824707031" height="16"/>
         <image name="FaceBookLogin" width="48.333332061767578" height="48"/>
         <image name="GoogleLogin" width="48.333332061767578" height="48"/>
         <image name="KakaoLogin" width="295" height="52"/>
+        <image name="LoginFrame" width="375" height="403"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
