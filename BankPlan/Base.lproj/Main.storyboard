@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLf-Vt-Lzi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -32,9 +32,8 @@
                                     <constraint firstAttribute="height" constant="54" id="w3g-nY-Ax5"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-ta-yEa">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-ta-yEa">
                                 <rect key="frame" x="16" y="121" width="343" height="535"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="개인정보 약관 동의가 필요해요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKF-2L-uHH">
                                         <rect key="frame" x="8" y="0.0" width="327" height="32"/>
@@ -50,33 +49,105 @@
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Euy-2T-i4t">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMP-an-t7v">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain">
+                                                            <backgroundConfiguration key="background" image="Allagree"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="TapAll:" destination="BYZ-38-t0r" eventType="touchDown" id="b3e-ms-dNZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bin-Jj-oMf">
                                                 <rect key="frame" x="0.0" y="64" width="343" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3x-1u-9Yg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button" image="PrivacyAgree"/>
+                                                        <state key="selected" title="Button" image="PrivacyAgreeSuccess"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="PrivacyAgree"/>
+                                                        <connections>
+                                                            <action selector="TapPrivacy:" destination="BYZ-38-t0r" eventType="touchDown" id="5OO-vi-0EK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBu-gh-enP">
+                                                        <rect key="frame" x="306" y="14" width="25" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="LookBtn"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chE-J9-WDt">
                                                 <rect key="frame" x="0.0" y="116" width="343" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yQ-b4-E9q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="MarketingAgree"/>
+                                                        <connections>
+                                                            <action selector="TapMarketing:" destination="BYZ-38-t0r" eventType="touchDown" id="RpA-bk-Cxx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKG-Cu-BG8">
+                                                        <rect key="frame" x="306" y="14" width="25" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="LookBtn"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="535" id="CS1-h3-6wq"/>
+                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KS-dV-mWW">
+                                <rect key="frame" x="16" y="704" width="343" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="LCP-c6-wlX"/>
+                                    <constraint firstAttribute="height" constant="54" id="RCY-7K-eta"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="NextBtn"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9KS-dV-mWW" secondAttribute="trailing" constant="16" id="8Zd-6K-g4L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EFa-ta-yEa" secondAttribute="trailing" constant="16" id="BFI-Yy-ycJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9KS-dV-mWW" secondAttribute="trailing" constant="16" id="FHn-xT-KIR"/>
                             <constraint firstItem="ahg-hh-27a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="47" id="JU9-CQ-EKR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9KS-dV-mWW" secondAttribute="bottom" constant="20" id="MRX-Lc-zBX"/>
                             <constraint firstItem="ahg-hh-27a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ol4-11-OFP"/>
                             <constraint firstItem="ahg-hh-27a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QvF-gO-iFX"/>
+                            <constraint firstItem="9KS-dV-mWW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SRB-yg-dQz"/>
+                            <constraint firstItem="9KS-dV-mWW" firstAttribute="top" secondItem="EFa-ta-yEa" secondAttribute="bottom" constant="48" id="Y7v-Gv-WAy"/>
+                            <constraint firstItem="EFa-ta-yEa" firstAttribute="top" secondItem="ahg-hh-27a" secondAttribute="bottom" constant="20" id="ZGU-eQ-Ddn"/>
+                            <constraint firstItem="EFa-ta-yEa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tlj-pK-EMM"/>
+                            <constraint firstItem="9KS-dV-mWW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vhS-cW-shS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="allAgreeCheckBox" destination="oMP-an-t7v" id="zwk-Xn-cb7"/>
+                        <outlet property="marketingCheckBox" destination="0yQ-b4-E9q" id="z9s-cO-ZYR"/>
+                        <outlet property="privacyCheckBox" destination="c3x-1u-9Yg" id="JhQ-vc-pI5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,10 +325,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wui-fj-YG1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="-681"/>
+            <point key="canvasLocation" x="598" y="-683"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Allagree" width="343" height="48"/>
         <image name="AppleLogin" width="295" height="52"/>
         <image name="Dismiss" width="24" height="24"/>
         <image name="DividerLogin" width="204.33332824707031" height="16"/>
@@ -265,17 +337,16 @@
         <image name="GoogleLogin" width="48.333332061767578" height="48"/>
         <image name="KakaoLogin" width="295" height="52"/>
         <image name="LoginFrame" width="375" height="403"/>
+        <image name="LookBtn" width="22.666666030883789" height="12.666666984558105"/>
+        <image name="MarketingAgree" width="343" height="48"/>
+        <image name="NextBtn" width="343" height="54"/>
+        <image name="PrivacyAgree" width="343" height="48"/>
+        <image name="PrivacyAgreeSuccess" width="343" height="48"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
