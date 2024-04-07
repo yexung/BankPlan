@@ -22,6 +22,14 @@ class MainLoginVC: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        Auth.auth().addStateDidChangeListener { auth, user in
+            NSLog("user inof   " + user!.uid  + " : " + user!.email! + " : " );
+       }
+
+        
+        
 
     }
     

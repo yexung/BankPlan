@@ -9,21 +9,24 @@ import UIKit
 
 class test: UIViewController {
 
+    let checkboxButton: UIButton = {
+        let button = UIButton(type: .system)
+        // Set the unchecked image for the normal state
+        button.setImage(UIImage(named: "Allagree"), for: .normal)
+        // Set the checked image for the selected state
+        button.setImage(UIImage(named: "AllagreeSuccess"), for: .selected)
+        button.addTarget(self, action: #selector(toggleCheckbox), for: .touchUpInside)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Add the checkbox button to the view
+        checkboxButton.frame = CGRect(x: 100, y: 100, width: 50, height: 50) // Adjust the frame as needed
+        view.addSubview(checkboxButton)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func toggleCheckbox() {
+        checkboxButton.isSelected = !checkboxButton.isSelected
     }
-    */
-
 }

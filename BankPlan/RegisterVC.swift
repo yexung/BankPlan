@@ -11,6 +11,7 @@ class RegisterVC: UIViewController {
     var allAgree = false
     var PrivacyAgree = false
     var MarketingAgree = false
+    var AgreeCnt: Int = 0
     
     @IBOutlet weak var MarketingAgreeBtn: UIButton!
     @IBOutlet weak var PrivacyAgreeBtn: UIButton!
@@ -23,9 +24,73 @@ class RegisterVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        AllagreeBtn.addTarget(self, action: #selector(TapAllagree(_:)), for: .touchUpInside)
+        PrivacyAgreeBtn.addTarget(self, action: #selector(TapPrivacyagree(_:)), for: .touchUpInside)
+        MarketingAgreeBtn.addTarget(self, action: #selector(TapMarketing(_:)), for: .touchUpInside)
+        ///
+        AllagreeBtn.isSelected = false
+        PrivacyAgreeBtn.isSelected = false
+        MarketingAgreeBtn.isSelected = false
         
-        
+       
 
+    }
+    @objc func TapAllagree(_ sender: UIButton) {
+            // Toggle selected state when button is clicked
+            sender.isSelected = !sender.isSelected
+            
+            // You can perform additional actions based on the selected state here
+            if sender.isSelected {
+                print("Button is selected")
+                PrivacyAgreeBtn.isSelected = true
+                MarketingAgreeBtn.isSelected = true
+                AgreeCnt = 2
+                
+            } else {
+                print("Button is not selected")
+                PrivacyAgreeBtn.isSelected = false
+                MarketingAgreeBtn.isSelected = false
+                AgreeCnt = 0
+            }
+        checkAllagree()
+        }
+    @objc func TapPrivacyagree(_ sender: UIButton) {
+            // Toggle selected state when button is clicked
+            sender.isSelected = !sender.isSelected
+            
+            // You can perform additional actions based on the selected state here
+            if sender.isSelected {
+                print("Button is selected")
+                AgreeCnt += 1
+                
+            } else {
+                print("Button is not selected")
+                AgreeCnt -= 1
+            }
+        checkAllagree()
+        }
+    @objc func TapMarketing(_ sender: UIButton) {
+            // Toggle selected state when button is clicked
+            sender.isSelected = !sender.isSelected
+            
+            // You can perform additional actions based on the selected state here
+            if sender.isSelected {
+                print("Button is selected")
+                AgreeCnt += 1
+            } else {
+                print("Button is not selected")
+                AgreeCnt -= 1
+            }
+        checkAllagree()
+        
+        }
+    func checkAllagree(){
+        if (AgreeCnt == 2){
+            AllagreeBtn.isSelected = true
+        } else {
+            AllagreeBtn.isSelected = false
+        }
     }
 
 }
+

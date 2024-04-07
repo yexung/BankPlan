@@ -50,16 +50,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMP-an-t7v">
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMP-an-t7v">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <backgroundConfiguration key="background" image="Allagree"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="TapAll:" destination="BYZ-38-t0r" eventType="touchDown" id="b3e-ms-dNZ"/>
-                                                        </connections>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" backgroundImage="Allagree">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="selected" image="AllagreeSuccess"/>
                                                     </button>
                                                 </subviews>
                                             </view>
@@ -67,18 +65,16 @@
                                                 <rect key="frame" x="0.0" y="64" width="343" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3x-1u-9Yg">
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3x-1u-9Yg">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="Button" image="PrivacyAgree"/>
-                                                        <state key="selected" title="Button" image="PrivacyAgreeSuccess"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="PrivacyAgree"/>
-                                                        <connections>
-                                                            <action selector="TapPrivacy:" destination="BYZ-38-t0r" eventType="touchDown" id="5OO-vi-0EK"/>
-                                                        </connections>
+                                                        <state key="normal" image="PrivacyAgree"/>
+                                                        <state key="selected" image="PrivacyAgreeSuccess">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBu-gh-enP">
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGI-Hj-rwq">
                                                         <rect key="frame" x="306" y="14" width="25" height="20"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
@@ -91,14 +87,12 @@
                                                 <rect key="frame" x="0.0" y="116" width="343" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yQ-b4-E9q">
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yQ-b4-E9q">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="MarketingAgree"/>
-                                                        <connections>
-                                                            <action selector="TapMarketing:" destination="BYZ-38-t0r" eventType="touchDown" id="RpA-bk-Cxx"/>
-                                                        </connections>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="MarketingAgree"/>
+                                                        <state key="selected" image="MarketingAgreeSuccess"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKG-Cu-BG8">
                                                         <rect key="frame" x="306" y="14" width="25" height="20"/>
@@ -144,14 +138,29 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="allAgreeCheckBox" destination="oMP-an-t7v" id="zwk-Xn-cb7"/>
-                        <outlet property="marketingCheckBox" destination="0yQ-b4-E9q" id="z9s-cO-ZYR"/>
-                        <outlet property="privacyCheckBox" destination="c3x-1u-9Yg" id="JhQ-vc-pI5"/>
+                        <outlet property="AllagreeBtn" destination="oMP-an-t7v" id="cI2-Bh-ydJ"/>
+                        <outlet property="MarketingAgreeBtn" destination="0yQ-b4-E9q" id="zze-pr-Zec"/>
+                        <outlet property="PrivacyAgreeBtn" destination="c3x-1u-9Yg" id="CKf-bE-Xzj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="582" y="37"/>
+        </scene>
+        <!--Test-->
+        <scene sceneID="dKb-Z5-ieM">
+            <objects>
+                <viewController id="9Ot-4G-tfB" customClass="test" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hu2-fe-mVz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3OK-hc-1Vv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xkb-Dr-qgu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1345" y="23"/>
         </scene>
         <!--Main LoginVC-->
         <scene sceneID="1lD-m9-pEQ">
@@ -164,7 +173,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginFrame" translatesAutoresizingMaskIntoConstraints="NO" id="f06-qE-JZK">
                                 <rect key="frame" x="0.0" y="67" width="375" height="403"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="403" id="RK1-JO-W0N"/>
+                                    <constraint firstAttribute="height" constant="403" id="dzQ-08-HIB"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orN-tF-jdH">
@@ -173,21 +182,21 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLW-Vl-Ejo" userLabel="KakaoLoginBtn">
                                         <rect key="frame" x="40" y="12" width="295" height="52"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="52" id="crK-ga-ZjC"/>
+                                            <constraint firstAttribute="height" constant="52" id="8dG-If-KSv"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" cornerRadius="16" image="KakaoLogin"/>
+                                            <backgroundConfiguration key="background" cornerRadius="16" image="KakaoLogin" imageContentMode="scaleAspectFit"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxd-hw-hkb" userLabel="AppleLoginBtn">
                                         <rect key="frame" x="40" y="80" width="295" height="52"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="52" id="1JV-ya-Cy3"/>
+                                            <constraint firstAttribute="height" constant="52" id="AEJ-7I-hX5"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" cornerRadius="16" image="AppleLogin"/>
+                                            <backgroundConfiguration key="background" cornerRadius="16" image="AppleLogin" imageContentMode="scaleAspectFit"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="AppleLoginBtnTouchDown:" destination="aLf-Vt-Lzi" eventType="touchDown" id="WtU-yj-FGf"/>
@@ -196,60 +205,59 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DividerLogin" translatesAutoresizingMaskIntoConstraints="NO" id="unE-hY-ENv">
                                         <rect key="frame" x="85" y="144" width="204" height="16"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="16" id="UTx-KY-Rnf"/>
+                                            <constraint firstAttribute="height" constant="16" id="ke0-Es-wKS"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep8-j0-I0o">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep8-j0-I0o">
                                         <rect key="frame" x="108" y="168" width="73" height="62"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="96o-WT-Mne"/>
+                                            <constraint firstAttribute="height" constant="62" id="xA1-Zz-23O"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="FaceBookLogin"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usm-EP-xmw">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usm-EP-xmw">
                                         <rect key="frame" x="189" y="168" width="73" height="62"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="lKL-Jn-0eK"/>
+                                            <constraint firstAttribute="height" constant="62" id="yHd-vu-jQz"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="GoogleLogin"/>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="mLW-Vl-Ejo" firstAttribute="top" secondItem="orN-tF-jdH" secondAttribute="top" constant="12" id="2Nx-rg-RmS"/>
-                                    <constraint firstItem="mLW-Vl-Ejo" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="40" id="39z-W9-TRy"/>
-                                    <constraint firstItem="Ep8-j0-I0o" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="108" id="EvD-Vu-cPc"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ep8-j0-I0o" secondAttribute="bottom" constant="58" id="FqZ-48-rpS"/>
-                                    <constraint firstItem="unE-hY-ENv" firstAttribute="top" secondItem="fxd-hw-hkb" secondAttribute="bottom" constant="12" id="LXg-n4-2sh"/>
-                                    <constraint firstItem="usm-EP-xmw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ep8-j0-I0o" secondAttribute="trailing" constant="8" symbolic="YES" id="OR4-4j-VP1"/>
-                                    <constraint firstItem="unE-hY-ENv" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="85" id="Obd-Es-PCo"/>
+                                    <constraint firstItem="Ep8-j0-I0o" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="108" id="3tv-2b-Bfg"/>
+                                    <constraint firstAttribute="bottom" secondItem="usm-EP-xmw" secondAttribute="bottom" constant="58" id="7V0-KF-zi3"/>
+                                    <constraint firstAttribute="trailing" secondItem="fxd-hw-hkb" secondAttribute="trailing" constant="40" id="Hby-0F-G3e"/>
+                                    <constraint firstItem="unE-hY-ENv" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="85" id="Oc3-Ph-WGj"/>
+                                    <constraint firstItem="Ep8-j0-I0o" firstAttribute="top" secondItem="unE-hY-ENv" secondAttribute="bottom" constant="8" id="Pwe-fC-z16"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ep8-j0-I0o" secondAttribute="bottom" constant="58" id="Q0h-Jb-JaA"/>
+                                    <constraint firstItem="mLW-Vl-Ejo" firstAttribute="top" secondItem="orN-tF-jdH" secondAttribute="top" constant="12" id="TMg-s6-W4f"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="288" id="WCj-w8-wRO"/>
-                                    <constraint firstItem="fxd-hw-hkb" firstAttribute="top" secondItem="mLW-Vl-Ejo" secondAttribute="bottom" constant="16" id="Zs4-T0-7Qv"/>
-                                    <constraint firstAttribute="trailing" secondItem="fxd-hw-hkb" secondAttribute="trailing" constant="40" id="Zvt-fA-BqO"/>
-                                    <constraint firstItem="usm-EP-xmw" firstAttribute="top" secondItem="unE-hY-ENv" secondAttribute="bottom" constant="8" id="gyD-Ge-hOR"/>
-                                    <constraint firstItem="Ep8-j0-I0o" firstAttribute="top" secondItem="unE-hY-ENv" secondAttribute="bottom" constant="8" id="if6-yH-RB8"/>
+                                    <constraint firstAttribute="trailing" secondItem="usm-EP-xmw" secondAttribute="trailing" constant="113" id="Xbb-OP-0Uq"/>
+                                    <constraint firstItem="usm-EP-xmw" firstAttribute="top" secondItem="unE-hY-ENv" secondAttribute="bottom" constant="8" id="gaZ-Rf-2d6"/>
+                                    <constraint firstItem="mLW-Vl-Ejo" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="40" id="h32-79-CD5"/>
+                                    <constraint firstItem="unE-hY-ENv" firstAttribute="top" secondItem="fxd-hw-hkb" secondAttribute="bottom" constant="12" id="hOc-dG-H7y"/>
                                     <constraint firstAttribute="height" constant="288" id="jHD-fg-V9K"/>
-                                    <constraint firstAttribute="trailing" secondItem="mLW-Vl-Ejo" secondAttribute="trailing" constant="40" id="meI-bd-euj"/>
-                                    <constraint firstItem="fxd-hw-hkb" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="40" id="nKv-yJ-nOq"/>
-                                    <constraint firstAttribute="trailing" secondItem="usm-EP-xmw" secondAttribute="trailing" constant="113" id="sed-8e-usq"/>
-                                    <constraint firstAttribute="bottom" secondItem="usm-EP-xmw" secondAttribute="bottom" constant="58" id="taW-Bo-38u"/>
-                                    <constraint firstAttribute="trailing" secondItem="unE-hY-ENv" secondAttribute="trailing" constant="86" id="urY-8I-uA7"/>
+                                    <constraint firstItem="fxd-hw-hkb" firstAttribute="top" secondItem="mLW-Vl-Ejo" secondAttribute="bottom" constant="16" id="kts-fn-cbN"/>
+                                    <constraint firstItem="fxd-hw-hkb" firstAttribute="leading" secondItem="orN-tF-jdH" secondAttribute="leading" constant="40" id="spj-mr-ZTh"/>
+                                    <constraint firstAttribute="trailing" secondItem="unE-hY-ENv" secondAttribute="trailing" constant="86" id="z8b-98-iau"/>
+                                    <constraint firstAttribute="trailing" secondItem="mLW-Vl-Ejo" secondAttribute="trailing" constant="40" id="zCH-tW-sq0"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r7U-ew-oaG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="f06-qE-JZK" firstAttribute="leading" secondItem="r7U-ew-oaG" secondAttribute="leading" id="08s-Mb-mVI"/>
+                            <constraint firstItem="f06-qE-JZK" firstAttribute="top" secondItem="r7U-ew-oaG" secondAttribute="top" constant="17" id="BKH-YI-bKY"/>
                             <constraint firstItem="orN-tF-jdH" firstAttribute="leading" secondItem="r7U-ew-oaG" secondAttribute="leading" id="DMq-Sh-XcO"/>
                             <constraint firstItem="orN-tF-jdH" firstAttribute="bottom" secondItem="r7U-ew-oaG" secondAttribute="bottom" id="Efw-x3-CBI"/>
                             <constraint firstItem="orN-tF-jdH" firstAttribute="bottom" secondItem="r7U-ew-oaG" secondAttribute="bottom" id="Eze-Uv-pxa"/>
-                            <constraint firstItem="f06-qE-JZK" firstAttribute="top" secondItem="r7U-ew-oaG" secondAttribute="top" constant="17" id="VYI-61-4II"/>
+                            <constraint firstItem="f06-qE-JZK" firstAttribute="leading" secondItem="r7U-ew-oaG" secondAttribute="leading" id="Xfc-nk-sve"/>
                             <constraint firstItem="orN-tF-jdH" firstAttribute="trailing" secondItem="r7U-ew-oaG" secondAttribute="trailing" id="Y4a-5t-ndB"/>
+                            <constraint firstItem="f06-qE-JZK" firstAttribute="trailing" secondItem="r7U-ew-oaG" secondAttribute="trailing" id="g19-vz-ZpC"/>
                             <constraint firstItem="orN-tF-jdH" firstAttribute="bottom" secondItem="r7U-ew-oaG" secondAttribute="bottom" id="i32-eh-NaX"/>
-                            <constraint firstItem="orN-tF-jdH" firstAttribute="top" secondItem="f06-qE-JZK" secondAttribute="bottom" constant="20" id="nEs-ae-EcL"/>
-                            <constraint firstItem="f06-qE-JZK" firstAttribute="trailing" secondItem="r7U-ew-oaG" secondAttribute="trailing" id="yMO-NC-i0C"/>
+                            <constraint firstItem="orN-tF-jdH" firstAttribute="top" secondItem="f06-qE-JZK" secondAttribute="bottom" constant="20" id="jTt-7u-Ej0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -261,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qty-cS-cae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156" y="29"/>
+            <point key="canvasLocation" x="-156" y="28.817733990147783"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="hkN-Se-qqS">
@@ -330,6 +338,7 @@
     </scenes>
     <resources>
         <image name="Allagree" width="343" height="48"/>
+        <image name="AllagreeSuccess" width="343" height="48"/>
         <image name="AppleLogin" width="295" height="52"/>
         <image name="Dismiss" width="24" height="24"/>
         <image name="DividerLogin" width="204.33332824707031" height="16"/>
@@ -339,6 +348,7 @@
         <image name="LoginFrame" width="375" height="403"/>
         <image name="LookBtn" width="22.666666030883789" height="12.666666984558105"/>
         <image name="MarketingAgree" width="343" height="48"/>
+        <image name="MarketingAgreeSuccess" width="343" height="48"/>
         <image name="NextBtn" width="343" height="54"/>
         <image name="PrivacyAgree" width="343" height="48"/>
         <image name="PrivacyAgreeSuccess" width="343" height="48"/>
