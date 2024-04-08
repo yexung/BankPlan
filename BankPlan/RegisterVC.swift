@@ -107,6 +107,7 @@ class RegisterVC: UIViewController {
             NextBtn.backgroundColor = .primary50
         }else {
             NextBtn.isSelected = false
+            NextBtn.backgroundColor = .neutral90
         }
         
     
